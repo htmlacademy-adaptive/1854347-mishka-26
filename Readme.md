@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Антонина](https://up.htmlacademy.ru/adaptive/26/user/1854347).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 
