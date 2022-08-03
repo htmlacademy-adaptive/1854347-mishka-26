@@ -27,133 +27,63 @@
       </ul>
     </nav>
   </header>
-  <!--main-->
   <main class="main-page">
     <header class="main-page__header hero">
-      <h1 class="hero__title heading">Милые штуки ручной работы для дома</h1>
+      <h1 class="hero__title heading">Каталог товара</h1>
     </header>
-    <!--features-->
-    <section class="features">
-      <h2 class="visually-hidden heading">Популярные разделы каталога</h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <a class="features__link" href="">Предметы интерьера
-            <img src="/source/img/interior-btn.svg" alt="Предметы интерьера">
+    <section class="catalog">
+      <h2 class="visually-hidden heading">Список товара</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <a class="card__link" href="#">
+            <img class="" src="./img/photo-1-mobile 1.png" width="100" height="100" alt="img" />
+          </a>
+          <a class="card__link" href="#">
+            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="card__text">Рост 30 см, вес 200 г</p>
+          <b class="card__price">1 200 руб.</b>
+          <a class="card__button button" href="#">
+            <span class="visually-hidden"> В корзину</span>
           </a>
         </li>
-        <li class="features__item">
-          <a class="features__link" href="">Детские игрушки
-            <img src="/source/img/toys-btn.svg" alt="Детские игрушки">
+        <li class="catalog__item card">
+          <a class="card__link" href="#">
+            <img class="" src="./img/photo-2-mobile 1.png" width="100" height="100" alt="img" />
+          </a>
+          <a class="card__link" href="#">
+            <h3 class="card__title">Корзинка для белья</h3>
+          </a>
+          <p class="card__text">Диаметр 15 см, высота 10 см</p>
+          <b class="card__price">690 руб.</b>
+          <a class="card__button button" href="#">
+            <span class="visually-hidden"> В корзину</span>
+          </a>
+        </li>
+        <li class="catalog__item card">
+          <a class="card__link" href="#">
+            <img class="" src="./img/photo-3-mobile 1.png" width="100" height="100" alt="img" />
+          </a>
+          <a class="card__link" href="#">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="card__text">Диаметр 30 см, высота 30 см</p>
+          <b class="card__price">1 500 руб.</b>
+          <a class="card__button button" href="#">
+            <span class="visually-hidden"> В корзину</span>
           </a>
         </li>
       </ul>
     </section>
-    <!--card-top-->
-    <section class="card-top">
-      <h2 class="card-top__title heading">Вязаные корзинки</h2>
-      <b class="card-top__subtitle">Товары недели</b>
-      <p class="card-top__text">
-        Экологически чистая пряжа,
-        ручная работа. Доступны в шести расцветках и трёх размерах.
-      </p>
-      <table class="card-top__table">
-        <tr class="card-top__line">
-          <th class="card-top__column">Цвет:</th>
-          <th class="card-top__column">тиффани/серый</th>
-        </tr>
-        <tr class="card-top__line">
-          <td class="card-top__column">Диаметр:</td>
-          <td class="card-top__column">25 см</td>
-        </tr>
-        <tr class="card-top__line">
-          <th class="card-top__column">Высота:</th>
-          <th class="card-top__column">15 см</th>
-        </tr>
-      </table>
-      <img class="card-top__img" src="/source/img/triple-set.png" alt="Набор корзинок">
-      <b class="card-top__price">Цена: 990 руб.</b>
-      <a class="card-top__button button">Заказать</a>
-    </section>
-    <!--description-->
-    <section class="about-us">
-      <h2 class="about-us__title heading">Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item"> <img src="/source/img/icon-flower.svg" alt="Иконка описаний">Экологически
-          чистые материалы</li>
-        <li class="about-us__item"> <img src="/source/img/icon-money.svg" alt="Иконка описаний">Скандинавский
-          стиль по российской цене</li>
-        <li class="about-us__item"> <img src="/source/img/icon-heart.svg" alt="Иконка описаний">Увеличивает
-          лайки на фотографиях</li>
-        <li class="about-us__item"> <img src="/source/img/icon-knidle.svg" alt="Иконка описаний">Связано вручную
-          с любовью и умилением</li>
-        <li class="about-us__item"> <img src="/source/img/icon-rocket.svg" alt="Иконка описаний">Поддержка
-          отечественного производителя</li>
-        <li class="about-us__item"> <img src="/source/img/icon-present.svg" alt="Иконка описаний">Поставляется
-          в подарочной упаковке</li>
-      </ul>
-    </section>
-    <!--slider-->
-    <section class="feedback slider">
-      <h2 class="feedback__title heading">Отзывы</h2>
-      <ul class="feedback__list slider__list">
-        <li class="feedback__item slider__item">
-          <div class="feedback__quote user-quote">
-            <p class="user-quote__text"> Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-              лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <span class="user-quote__author">Анастасия Красильникова</span>
-            <a class="user-quote__link" href="#">@misssssiskras</a>
-          </div>
-        </li>
-        <li class="feedback__item slider__item">
-          <div class="feedback__quote user-quote">
-            <p class="user-quote__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!
-            </p>
-            <span class="user-quote__author">Екатерина Красильникова</span>
-            <a class="user-quote__link" href="#">@misssssiskras2</a>
-          </div>
-        </li>
-        <li class="feedback__item slider__item">
-          <div class="feedback__quote user-quote">
-            <p class="user-quote__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
-              такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!
-            </p>
-            <span class="user-quote__author">Елена Красильникова</span>
-            <a class="user-quote__link" href="#">@misssssiskras3</a>
-          </div>
-        </li>
-      </ul>
-      <section class="main-slider">
-        <button class="main-slider__button-prev" type="button">
-          <span class="visually-hidden">Предыдущий комментарий</span>
-        </button>
-        <button class="main-slider__button-next" type="button">
-          <span class="visually-hidden">Следующий комментарий</span>
-        </button>
-      </section>
-    </section>
-    <!--contact-->
-    <section class="contacts">
-      <h2 class="contacts__title heading">Контакты</h2>
-      <dl class="contacts__table">
-        <dt class="contacts__adres">E-mail</dt>
-        <dd class="contacts__value">
-          <a class="contacts__email" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </dd>
-        <dt class="contacts__adres">Адрес:</dt>
-        <dd class="contacts__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
-      </dl>
-      <div class="contacts__wrapper">
-        <img class="contacts__map" src="/source/img/map-mobile@1x 1.png" alt="Карта месторасположения">
-      </div>
-      <button class="contacts__button button" type="button">напишите нам</button>
+    <section class="production">
+      <h2 class="production__title heading"> Процесс производства</h2>
+      <video class="production__play" src="#" poster="./img/video-mobile 1.png">
+      </video>
+      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <button class="production__button">
+        <a class="production__button button" href="">Сделать заказ</a>
+      </button>
     </section>
   </main>
   <!--footer-->
@@ -200,7 +130,6 @@
       </a>
     </section>
   </footer>
-
 </body>
 
 </html>
