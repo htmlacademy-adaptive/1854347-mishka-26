@@ -10,8 +10,8 @@
 <body class="page__body">
   <!--header-->
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="/source/img/mishka-logo-mobile.svg" width="86" height="35"
+    <a class="page-header__logo" href="./index.html">
+      <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип сайта Мишка">
     </a>
     <nav class="page-header__nav navigation">
@@ -19,8 +19,8 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="navigation__list site-navigation">
-        <li class="navigation__item"> <a class="navigation__link" href="#">Каталог товаров</a></li>
-        <li class="navigation__item"> <a class="navigation__link" href="#">Вязание на заказ</a></li>
+        <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
+        <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
       </ul>
       <ul class="navigation__list user-navigation">
         <li class="navigation__item"> <a class="navigation__link" href="#">Поиск по сайту</a></li>
@@ -42,14 +42,14 @@
           <h3 class="order-form__title">Тип</h3>
           <ul class="order-form__list order-form__radio">
             <li class="order-form__item radio">
-              <label class="radio__label" for="radio__interior">
-                <input class="radio__input" id="radio__input" type="radio">
+              <label class="radio__label" for="aqusessuari">
+                <input class="radio__input" id="aqusessuari" type="radio">
                 <span class="radio__text">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="order-form__item radio">
-              <label class="radio__label" for="radio__toy">
-                <input class="radio__input" id="radio__i" type="radio">
+              <label class="radio__label" for="toys">
+                <input class="radio__input" id="toys" type="radio">
                 <span class="radio__text">Детская игрушка</span>
               </label>
             </li>
@@ -59,38 +59,38 @@
           <h3 class="order-form__title">Цвет</h3>
           <ul class="order-form__list order-form__checkbox">
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="white">
+                <input class="checkbox__input" id="white" type="checkbox">
                 <span class="checkbox__text">Белый</span>
               </label>
             </li>
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="grey">
+                <input class="checkbox__input" id="grey" type="checkbox">
                 <span class="checkbox__text">Серый</span>
               </label>
             </li>
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="tiffany">
+                <input class="checkbox__input" id="tiffany" type="checkbox">
                 <span class="checkbox__text">Тиффани</span>
               </label>
             </li>
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="black">
+                <input class="checkbox__input" id="black" type="checkbox">
                 <span class="checkbox__text">Черный</span>
               </label>
             </li>
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="pink">
+                <input class="checkbox__input" id="pink" type="checkbox">
                 <span class="checkbox__text">Розовый</span>
               </label>
             </li>
             <li class="order-form__item checkbox">
-              <label class="checkbox__label" for="checkbox-color">
-                <input class="checkbox__input" id="checkbox-color" type="checkbox">
+              <label class="checkbox__label" for="orange">
+                <input class="checkbox__input" id="orange" type="checkbox">
                 <span class="checkbox__text">Оранжевый</span>
               </label>
             </li>
@@ -130,7 +130,7 @@
             </li>
             <li class="order-form__item email">
               <h3 class="email__title">E-mail</h3>
-              <label class="email__label" for="tell">
+              <label class="email__label" for="email">
                 <input class="email__input" type="tel" id="email" placeholder="Ваш Email*">
                 <img class="email__img" src="./img/mail..svg" alt=" телефон">
               </label>
@@ -145,9 +145,7 @@
           </ul>
         </div>
         <p class="order-form__imp-info">*Поля обязательны для заполнения</p>
-        <button class="order-form__button">
-          <a class="order-form__button button" href="">Отправить заказ</a>
-        </button>
+        <button class="order-form__button button">Отправить заказ</button>
       </form>
     </section>
   </main>
