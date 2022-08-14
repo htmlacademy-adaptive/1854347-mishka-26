@@ -4,44 +4,49 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <!--header-->
   <header class="page-header">
-    <a class="page-header__logo" href="./index.html">
-      <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Логотип сайта Мишка">
-    </a>
-    <nav class="page-header__nav navigation">
-      <button class="navigation__toggle button">
+    <div class="container">
+      <div class="page-header__body">
+        <a class="page-header__logo" href="./index.html">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Логотип сайта Мишка">
+        </a>
+      </div>
+      <div class="page-header__burger">
         <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="navigation__list site-navigation">
-        <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
-        <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="navigation__list user-navigation">
-        <li class="navigation__item"> <a class="navigation__link" href="#">Поиск по сайту</a></li>
-        <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
-      </ul>
-    </nav>
+      </div>
+        <nav class="navigation">
+        <ul class="navigation__list site-navigation">
+          <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="navigation__list user-navigation">
+          <li class="navigation__item"> <a class="navigation__link search" href="#">Поиск по сайту</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!--main-->
-  <main class="main-page">
-    <header class="main-page__header hero">
-      <h1 class="hero__title heading">Милые штуки ручной работы для дома</h1>
+  <main class="page-main">
+    <header class="page-main__header hero">
+      <h1 class="hero__title hero__title--img ">Милые штуки ручной работы для дома</h1>
     </header>
     <!--features-->
     <section class="features">
-      <h2 class="visually-hidden heading">Популярные разделы каталога</h2>
+      <h2 class="visually-hidden">Популярные разделы каталога</h2>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item interior-items">
           <a class="features__link" href="">Предметы интерьера
             <img src="./img/interior-btn.svg" alt="Предметы интерьера">
           </a>
         </li>
-        <li class="features__item">
+        <li class="features__item kids-toys">
           <a class="features__link" href="">Детские игрушки
             <img src="./img/toys-btn.svg" alt="Детские игрушки">
           </a>
@@ -71,7 +76,7 @@
         </tr>
       </table>
       <img class="card-top__img" src="./img/triple-set.png" alt="Набор корзинок">
-      <b class="card-top__price">Цена: 990 руб.</b>
+      <p class="card-top__price">Цена: 990 руб.</p>
       <a class="card-top__button button">Заказать</a>
     </section>
     <!--description-->
@@ -138,6 +143,7 @@
           <span class="visually-hidden">Следующий комментарий</span>
         </button>
       </div>
+      <a class="card-top__button button">Написать</a>
     </section>
     <!--contact-->
     <section class="contacts">
@@ -152,7 +158,6 @@
       </dl>
       <div class="contacts__wrapper">
         <img class="contacts__map" src="./img/map-mobile.png" alt="Карта месторасположения">
-        <img class="contacts__map-pin" src="./img/map-pin.svg" alt="Метка">
       </div>
       <button class="contacts__button button" type="button">напишите нам</button>
     </section>
@@ -160,7 +165,7 @@
   <!--footer-->
   <footer class="page-footer">
     <section class="page-footer__social social">
-      <h2 class="visually-hidden  heading">Социальные сети</h2>
+      <h2 class="visually-hidden heading">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://www.vk.com/htmlacademy">

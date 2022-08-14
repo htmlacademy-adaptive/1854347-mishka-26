@@ -1,0 +1,41 @@
+.page-header {
+  background-color: @white-color;
+
+  &__container {
+    max-width: 320px;
+    height: 79px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo-img {
+    margin: 22px auto;
+  }
+}
+
+.navigation {
+  &__item {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 320px;
+    height: 79px;
+    border: 2px solid #cecece;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 22px;
+    text-decoration: none;
+    color: @black-color;
+    .font-text(700; 17px;24px);
+  }
+}
+
+.page-header__burger {
+  background-image: url("../../img/menu-burger.svg");
+  background-repeat: no-repeat;
+}

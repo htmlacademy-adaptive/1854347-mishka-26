@@ -4,28 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <!--header-->
   <header class="page-header">
-    <a class="page-header__logo" href="./index.html">
-      <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Логотип сайта Мишка">
-    </a>
-    <nav class="page-header__nav navigation">
-      <button class="navigation__toggle button">
+    <div class="container">
+      <div class="page-header__body">
+        <a class="page-header__logo" href="./index.html">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Логотип сайта Мишка">
+        </a>
+      </div>
+      <div class="page-header__burger">
         <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="navigation__list site-navigation">
-        <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
-        <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="navigation__list user-navigation">
-        <li class="navigation__item"> <a class="navigation__link" href="#">Поиск по сайту</a></li>
-        <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
-      </ul>
-    </nav>
+      </div>
+        <nav class="navigation">
+        <ul class="navigation__list site-navigation">
+          <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="navigation__list user-navigation">
+          <li class="navigation__item"> <a class="navigation__link search" href="#">Поиск по сайту</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-page">
     <header class="main-page__header hero">
@@ -36,7 +41,7 @@
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form class="order__form order-form">
+      <form class="order__form">
         <div class="order-form__group">
           <h3 class="order-form__title">Тип</h3>
           <ul class="order-form__list order-form__radio">

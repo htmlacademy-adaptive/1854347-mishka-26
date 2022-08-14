@@ -1,0 +1,42 @@
+// index
+@import "../components/features.less";
+@import "../components/card-top.less";
+@import "../components/about-us.less";
+@import "../components/feedback.less";
+@import "../components/contacts.less";
+
+// form
+@import "../components/order.less";
+
+// catalog
+@import "../components/catalog.less";
+@import "../components/production.less";
+
+.page-main__header {
+  margin-bottom: 30px;
+}
+
+.hero {
+  background-color: @lilak-color;
+  width: 320px;
+  height: 177px;
+  margin-bottom: 200px;
+
+  &__title {
+    .font-text(700; 27px; 30px);
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 320px;
+    height: 90px;
+    padding: 74px 42px;
+  }
+}
+
+.hero__title--img {
+  background-image: url("../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 373px;
+  padding: 30px;
+}
