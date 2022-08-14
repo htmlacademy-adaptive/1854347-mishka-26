@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1854347-mishka-26/3/">
+</head>
+
+<body class="page__body">
+  <!--header-->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__body">
+        <a class="page-header__logo" href="./index.html">
+          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Логотип сайта Мишка">
+        </a>
+      </div>
+      <div class="page-header__burger">
+        <span class="visually-hidden">Открыть меню</span>
+      </div>
+        <nav class="navigation">
+        <ul class="navigation__list site-navigation">
+          <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="navigation__list user-navigation">
+          <li class="navigation__item"> <a class="navigation__link search" href="#">Поиск по сайту</a></li>
+          <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-page">
+    <header class="main-page__header hero">
+      <h1 class="hero__title heading">Форма заказа</h1>
+    </header>
+    <section class="order">
+      <h2 class="visually-hidden heading">Форма заказа</h2>
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+        мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form class="order__form">
+        <div class="order-form__group">
+          <h3 class="order-form__title">Тип</h3>
+          <ul class="order-form__list order-form__radio">
+            <li class="order-form__item radio">
+              <label class="radio__label" for="aqusessuari">
+                <input class="radio__input" id="aqusessuari" type="radio">
+                <span class="radio__text">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="order-form__item radio">
+              <label class="radio__label" for="toys">
+                <input class="radio__input" id="toys" type="radio">
+                <span class="radio__text">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="order-form__group">
+          <h3 class="order-form__title">Цвет</h3>
+          <ul class="order-form__list order-form__checkbox">
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="white">
+                <input class="checkbox__input" id="white" type="checkbox">
+                <span class="checkbox__text">Белый</span>
+              </label>
+            </li>
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="grey">
+                <input class="checkbox__input" id="grey" type="checkbox">
+                <span class="checkbox__text">Серый</span>
+              </label>
+            </li>
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="tiffany">
+                <input class="checkbox__input" id="tiffany" type="checkbox">
+                <span class="checkbox__text">Тиффани</span>
+              </label>
+            </li>
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="black">
+                <input class="checkbox__input" id="black" type="checkbox">
+                <span class="checkbox__text">Черный</span>
+              </label>
+            </li>
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="pink">
+                <input class="checkbox__input" id="pink" type="checkbox">
+                <span class="checkbox__text">Розовый</span>
+              </label>
+            </li>
+            <li class="order-form__item checkbox">
+              <label class="checkbox__label" for="orange">
+                <input class="checkbox__input" id="orange" type="checkbox">
+                <span class="checkbox__text">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="order-form__group user-form">
+          <h3 class="user-form__user">ФИО</h3>
+          <ul class="user-form__list">
+            <li class="user-form__link user-name">
+              <label class="user-name__label" for="name">
+                <span class="user-name__span">Имя:</span>
+                <input class="user-name__input" type="text" id="name" placeholder="Введите ваше имя*">
+              </label>
+            </li>
+            <li class="user-form__link user-name">
+              <label class="user-name__label" for="name2">
+                <span class="user-name__span">Фамилия:</span>
+                <input class="user-name__input" type="text" id="name2" placeholder="Укажите фамилию*">
+              </label>
+            </li>
+            <li class="user-form__link user-name">
+              <label class="user-name__label" for="name3">
+                <span class="user-name__span">Отчество:</span>
+                <input class="user-name__input" type="text" id="name3" placeholder="Отчество, если желаете*">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="order-form__group">
+          <ul class="order-form__list">
+            <li class="order-form__item tell">
+              <h3 class="tell__title">ТЕЛ</h3>
+              <label class="tell__label" for="tell">
+                <input class="tell__input" type="tel" id="tell" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <img class="tell__img" src="./img/phone.svg" alt="телефон">
+              </label>
+            </li>
+            <li class="order-form__item email">
+              <h3 class="email__title">E-mail</h3>
+              <label class="email__label" for="email">
+                <input class="email__input" type="tel" id="email" placeholder="Ваш Email*">
+                <img class="email__img" src="./img/mail..svg" alt=" телефон">
+              </label>
+            </li>
+            <li class="order-form__item text">
+              <h3 class="text__title">ДОП</h3>
+              <label class="text__label" for="text">
+                <textarea class="text__textarea" id="text" rows="7"
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <p class="order-form__imp-info">*Поля обязательны для заполнения</p>
+        <button class="order-form__button button">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <!--footer-->
+  <footer class="page-footer">
+    <section class="page-footer__social social">
+      <h2 class="visually-hidden  heading">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://www.vk.com/htmlacademy">
+            <span class="visually-hidden">VK</span>
+            <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 2.83876C0 1.98373 0.515103 1.52268 1.54531 1.45562L5.51515 1.48077C5.78158 1.48077 5.95921 1.60651 6.04802 1.85799C6.45655 3.11538 6.91392 4.20094 7.42014 5.11465C7.92637 6.02835 8.58801 7.08038 9.40507 8.27071C9.47611 8.4216 9.59157 8.49704 9.75143 8.49704C9.87576 8.49704 9.97345 8.43836 10.0445 8.32101L10.1244 8.04438L10.1511 3.69379C10.1511 3.39201 10.0756 3.19083 9.92461 3.09024C9.77363 2.98965 9.49388 2.9142 9.08535 2.86391C8.76563 2.81361 8.60577 2.62919 8.60577 2.31065C8.60577 2.24359 8.61465 2.19329 8.63241 2.15976C9.00542 1.07002 10.0711 0.525148 11.8296 0.525148L13.3216 0.5C13.9966 0.5 14.5561 0.65927 15.0001 0.977811C15.4442 1.29635 15.6662 1.79931 15.6662 2.48669V8.19527C15.7906 8.27909 15.906 8.32101 16.0126 8.32101C16.279 8.32101 16.5099 8.17012 16.7053 7.86834C18.6592 5.28649 19.716 3.55966 19.8759 2.68787C19.8759 2.6711 19.8936 2.62919 19.9291 2.56213C20.0535 2.31065 20.2577 2.0927 20.5419 1.90828C20.8261 1.72387 21.0748 1.59813 21.288 1.53107C21.359 1.49753 21.4389 1.48077 21.5277 1.48077H25.6574L25.9239 1.50592C26.2791 1.50592 26.5544 1.66519 26.7498 1.98373C26.8209 2.08432 26.8697 2.19329 26.8964 2.31065C26.923 2.42801 26.9408 2.54536 26.9496 2.66272C26.9585 2.78008 26.963 2.84714 26.963 2.86391V3.03994C26.8386 3.72732 26.5233 4.4608 26.0171 5.24038C25.5109 6.01997 24.867 6.86243 24.0855 7.76775C23.304 8.67308 22.8155 9.26825 22.6201 9.55326C22.4603 9.75444 22.3803 9.93886 22.3803 10.1065C22.3803 10.2406 22.4514 10.3915 22.5935 10.5592L26.4834 15.1864C26.6965 15.4546 26.8031 15.748 26.8031 16.0666C26.8031 16.4522 26.6432 16.7707 26.3235 17.0222C26.0038 17.2737 25.6219 17.4162 25.1779 17.4497L24.7249 17.4749H20.6752C20.6574 17.4749 20.6219 17.479 20.5686 17.4874C20.5153 17.4958 20.4798 17.5 20.462 17.5C20.0712 17.5 19.7071 17.3407 19.3696 17.0222C19.2453 16.8881 18.4105 15.8989 16.8652 14.0547C16.7764 13.9374 16.652 13.8284 16.4922 13.7278C16.4211 13.9961 16.3279 14.3817 16.2124 14.8846C16.097 15.3876 16.0126 15.748 15.9593 15.966L15.8794 16.3935C15.7018 16.9803 15.3287 17.3323 14.7604 17.4497L14.3874 17.4749H11.7763C10.3021 17.4749 8.83224 16.8378 7.36686 15.5636C5.90148 14.2894 4.58264 12.6423 3.41034 10.622C2.23803 8.60182 1.14566 6.25049 0.133216 3.56805C0.0444054 3.3501 0 3.107 0 2.83876ZM16.0126 9.35207C15.6396 9.35207 15.3021 9.25567 15.0001 9.06287C14.6982 8.87007 14.5472 8.60602 14.5472 8.27071V2.48669C14.5472 2.15138 14.4584 1.91248 14.2808 1.76997C14.1032 1.62747 13.7923 1.55621 13.3483 1.55621L11.8296 1.60651C11.0658 1.60651 10.4886 1.73225 10.0978 1.98373C10.8793 2.3358 11.2701 2.90582 11.2701 3.69379V8.11982C11.2346 8.53895 11.0569 8.88683 10.7372 9.16346C10.4175 9.44009 10.0623 9.5784 9.6715 9.5784C9.13863 9.5784 8.7301 9.33531 8.44591 8.84911C7.06046 6.87081 6.03025 4.9931 5.35529 3.21598L5.1155 2.56213L1.57195 2.53698C1.34104 2.53698 1.21227 2.54956 1.18562 2.5747C1.15898 2.59985 1.14566 2.6711 1.14566 2.78846C1.14566 2.93935 1.16342 3.09862 1.19895 3.26627L1.75845 4.67456C3.25048 8.31262 4.87127 11.1795 6.62085 13.2751C8.37042 15.3708 10.0889 16.4186 11.7763 16.4186H14.4406C14.5472 16.4186 14.6271 16.3893 14.6804 16.3306C14.7337 16.2719 14.7781 16.1588 14.8136 15.9911L14.8669 15.7396L15.3732 13.5266C15.5152 13.2249 15.6396 13.0237 15.7462 12.9231C15.9415 12.7387 16.1725 12.6465 16.4389 12.6465C16.8652 12.6465 17.3003 12.8895 17.7444 13.3757L20.0091 16.0917C20.1512 16.3097 20.3022 16.4186 20.462 16.4186H24.8581C25.391 16.4186 25.6574 16.2929 25.6574 16.0414C25.6574 15.9576 25.6308 15.8738 25.5775 15.7899L21.7142 11.2382C21.4123 10.8861 21.2613 10.5089 21.2613 10.1065C21.2613 9.70414 21.4034 9.31854 21.6876 8.9497C21.9185 8.6144 22.367 8.05695 23.0331 7.27737C23.6992 6.49778 24.2809 5.76849 24.7782 5.0895C25.2756 4.4105 25.6042 3.79438 25.764 3.24112L25.8439 2.9142C25.8262 2.88067 25.8173 2.82618 25.8173 2.75074C25.8173 2.6753 25.8084 2.61243 25.7907 2.56213H21.6077C21.3412 2.66272 21.1281 2.81361 20.9682 3.01479L20.8084 3.4926C20.3643 4.64941 19.2009 6.43491 17.3181 8.84911C16.9451 9.18442 16.5099 9.35207 16.0126 9.35207Z"
+                fill="#231F20" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/htmlacademy">
+            <span class="visually-hidden">Youtube</span>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8509 9.29275L10.6145 5.80184C10.5159 5.73691 10.4016 5.69985 10.2837 5.69459C10.1657 5.68934 10.0486 5.71608 9.94459 5.77198C9.84061 5.82789 9.75368 5.91087 9.69302 6.01215C9.63236 6.11343 9.60022 6.22924 9.6 6.34729V13.3291C9.60013 13.4481 9.6327 13.5648 9.69421 13.6667C9.75572 13.7686 9.84384 13.8518 9.94909 13.9073C10.0524 13.9631 10.1691 13.9895 10.2864 13.9837C10.4037 13.978 10.5172 13.9402 10.6145 13.8746L15.8509 10.3837C15.9409 10.3239 16.0148 10.2429 16.0658 10.1477C16.1169 10.0526 16.1436 9.94621 16.1436 9.8382C16.1436 9.73019 16.1169 9.62385 16.0658 9.52868C16.0148 9.43351 15.9409 9.35245 15.8509 9.29275ZM10.9091 12.1073V7.56911L14.3127 9.8382L10.9091 12.1073ZM23.3891 3.54366C23.2942 3.17547 23.1131 2.83511 22.8609 2.55061C22.6086 2.26611 22.2924 2.04561 21.9382 1.90729C18.2182 0.478201 12.2509 0.500019 12 0.500019C11.7491 0.500019 5.78182 0.478201 2.06182 1.90729C1.70764 2.04561 1.3914 2.26611 1.13914 2.55061C0.886889 2.83511 0.705838 3.17547 0.610909 3.54366C0.327273 4.61275 0 6.57638 0 9.8382C0 13.1 0.327273 15.0637 0.610909 16.1327C0.705838 16.5009 0.886889 16.8413 1.13914 17.1258C1.3914 17.4103 1.70764 17.6308 2.06182 17.7691C5.78182 19.1982 11.7491 19.1764 12 19.1764H12.0764C12.8291 19.1764 18.3927 19.1327 21.9382 17.7691C22.2924 17.6308 22.6086 17.4103 22.8609 17.1258C23.1131 16.8413 23.2942 16.5009 23.3891 16.1327C23.6727 15.0637 24 13.1 24 9.8382C24 6.57638 23.6727 4.61275 23.3891 3.54366ZM22.1236 15.8055C22.0807 15.972 21.999 16.1259 21.8853 16.2548C21.7715 16.3838 21.6289 16.484 21.4691 16.5473C17.9782 17.8891 12.0655 17.8673 12 17.8673C11.9345 17.8673 6.02182 17.8891 2.53091 16.5473C2.37107 16.484 2.22846 16.3838 2.11471 16.2548C2.00096 16.1259 1.91929 15.972 1.87636 15.8055C1.61455 14.8018 1.30909 12.9582 1.30909 9.8382C1.30909 6.7182 1.61455 4.87457 1.87636 3.87093C1.91929 3.70445 2.00096 3.55047 2.11471 3.42156C2.22846 3.29264 2.37107 3.19243 2.53091 3.12911C6.02182 1.78729 11.9345 1.80911 12 1.80911C12.0655 1.80911 17.9782 1.78729 21.4691 3.12911C21.6289 3.19243 21.7715 3.29264 21.8853 3.42156C21.999 3.55047 22.0807 3.70445 22.1236 3.87093C22.3855 4.87457 22.6909 6.7182 22.6909 9.8382C22.6909 12.9582 22.3855 14.8018 22.1236 15.8055Z"
+                fill="#231F20" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.4608 0.652905C19.6393 0.802216 19.7255 1.0349 19.6872 1.26448L17.0611 17.0214C17.0244 17.2411 16.8789 17.4273 16.6745 17.5159C16.47 17.6045 16.2346 17.5833 16.0493 17.4597L8.17082 12.2074C8.01771 12.1054 7.91447 11.9437 7.88624 11.7619C7.858 11.58 7.90738 11.3947 8.02233 11.251L10.633 7.98773L6.27303 10.8944C6.077 11.025 5.82597 11.0407 5.61524 10.9353L0.362931 8.30915C0.127693 8.19153 -0.0146529 7.94488 0.00119976 7.68235C0.0170525 7.41983 0.188044 7.1921 0.435726 7.10364L18.8188 0.538258C19.038 0.459976 19.2822 0.503595 19.4608 0.652905ZM2.32626 7.82275L5.86168 9.59046L13.4231 4.5495C13.6925 4.36994 14.0525 4.41349 14.2712 4.6521C14.49 4.8907 14.5022 5.25314 14.3 5.50591L9.49502 11.5121L15.9328 15.8039L18.2083 2.15058L2.32626 7.82275Z"
+                fill="#231F20" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__copyright copyright">
+      <h2 class="copyright__title">Разработано</h2>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Html Academy</span>
+      </a>
+    </section>
+  </footer>
+</body>
+
+</html>
