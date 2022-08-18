@@ -1,24 +1,41 @@
-@import "../components/navigation.less";
+@import "../components/main-nav.less";
+@import "../components/site-list.less";
+@import "../components/user-list.less";
+@import "../components/promo-list.less";
 
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: @white-color;
-}
+  color: @black-color;
+  width: 320px;
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 
-.page-header__container {
-  max-width: 320px;
-  height: 79px;
+  // @media (min-width: @tablet-width) {
+  //   width: 668px;
+  //   margin: 0 auto;
+  //   padding: 0 50px;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  // }
+
+  // @media (min-width: @desktop-width) {
+  //   width: 1050px;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.page-header__logo-img {
   margin: 22px auto;
+  height: 89px;
+  outline: 5px solid rgba(50, 205, 250, 0.8);
+  outline-offset: -5px;
 }
 
-.page-header__burger {
-  background-image: url("../../img/menu-burger.svg");
-  background-repeat: no-repeat;
+.main-nav__text {
+  outline: 5px solid rgba(41, 90, 71, 0.8);
+  outline-offset: -5px;
 }

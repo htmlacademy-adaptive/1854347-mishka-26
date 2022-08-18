@@ -1,0 +1,23 @@
+.main-nav {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: @black-color;
+  outline: 5px solid rgba(250, 50, 160, 0.8);
+  outline-offset: -5px;
+
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+
+  &__text {
+    display: none;
+  }
+
+  &__toggle:hover ~ .site-list {
+    display: block;
+  }
+
+  &__toggle:hover ~ .user-list {
+    display: block;
+  }
+}

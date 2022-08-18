@@ -11,27 +11,44 @@
 <body class="page__body">
   <!--header-->
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__body">
-        <a class="page-header__logo" href="./index.html">
-          <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
-            alt="Логотип сайта Мишка">
-        </a>
-      </div>
-      <div class="page-header__burger">
-        <span class="visually-hidden">Открыть меню</span>
-      </div>
-        <nav class="navigation">
-        <ul class="navigation__list site-navigation">
-          <li class="navigation__item"> <a class="navigation__link" href="./catalog.html">Каталог товаров</a></li>
-          <li class="navigation__item"> <a class="navigation__link" href="./form.html">Вязание на заказ</a></li>
-        </ul>
-        <ul class="navigation__list user-navigation">
-          <li class="navigation__item"> <a class="navigation__link search" href="#">Поиск по сайту</a></li>
-          <li class="navigation__item"> <a class="navigation__link" href="#">Корзина</a></li>
-        </ul>
+        <nav class="main-nav main-navigation--closed main-nav-nojs">
+            <a class="page-header__logo" href="./index.html">
+              <img class="page-header__logo-img" src="./img/mishka-logo-mobile.svg" width="86" height="35"
+                alt="Логотип сайта Мишка">
+            </a>
+            <button class="main-nav__toggle button" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--activ">
+                <a class="site-list__link" href="./catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item ">
+                <a class="site-list__link" href="./form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--activ">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Корзина</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list promo-list" >
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+            <p class="main-nav__text">Бесплатная доставка по России</p>
       </nav>
-    </div>
   </header>
   <!--main-->
   <main class="page-main">
