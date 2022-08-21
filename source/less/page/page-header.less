@@ -1,24 +1,37 @@
-@import "../components/navigation.less";
-
 .page-header {
-  background-color: @white-color;
+  @media (min-width: @tablet-width) {
+    min-height: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 130px;
+  }
 }
 
 .page-header__container {
-  max-width: 320px;
-  height: 79px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
 
-.page-header__logo {
-  display: flex;
-  justify-content: center;
-}
+.page-header__text {
+  display: none;
+  margin: 0;
+  font-size: 15px;
+  text-align: right;
 
-.page-header__logo-img {
-  margin: 22px auto;
-}
 
-.page-header__burger {
-  background-image: url("../../img/menu-burger.svg");
-  background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: block;
+    transform: translateY(-48px);
+  }
 }

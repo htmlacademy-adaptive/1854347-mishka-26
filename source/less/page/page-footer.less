@@ -1,6 +1,20 @@
-@import "../components/copyright.less";
-@import "../components/social.less";
-
 .page-footer {
-  background: @lilak-color;
+  padding: 25px 0 23px;
+  background-color: @lilak-color;
+}
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

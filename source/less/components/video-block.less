@@ -1,0 +1,21 @@
+.video-block {
+  width: 260px;
+  height: 150px;
+  display: flex;
+  background: @lilak-color url("../../img/catalog/play-video.png") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+
+    @media (min-width: @desktop-width) {
+      width: 682px;
+      height: 455px;
+    }
+  }
+}
+
+.video-block__button {
+  margin: auto;
+  border: none;
+}

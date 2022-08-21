@@ -1,0 +1,49 @@
+.catalog-link {
+  .link-reset();
+  display: block;
+  box-sizing: border-box;
+  margin: 0 -30px;
+  padding: 24px 30px 31px;
+  color: @white-color;
+  font-weight: 700;
+  font-size: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  &--interior-items {
+    background-color: @green-color;
+    background-image: url("../img/index/interior-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center right 36px;
+
+    &:hover {
+      background-color: @light-green-color;
+    }
+
+    &:active {
+      background-color: @light-green-color;
+    }
+  }
+
+  &--toys {
+    background-color: @medium-green-color;
+    background-image: url("../img/index/toys-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center right 27px;
+
+    &:hover {
+      background-color: @dark-green-color;
+    }
+
+    &:active {
+      background-color: @dark-green-color;
+    }
+  }
+}
+
+.catalog-link__caption {
+  margin: 0;
+  width: 130px;
+}

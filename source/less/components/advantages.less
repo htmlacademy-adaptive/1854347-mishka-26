@@ -1,0 +1,96 @@
+.advantages {
+  padding: 31px 0 29px;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 0 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0 90px;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 28px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+    margin-left: 175px;
+  }
+}
+
+.advantages__list {
+  .list-reset();
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    row-gap: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 670px;
+    margin-left: 175px;
+    column-gap: 85px;
+  }
+}
+
+.advantages__item {
+  background-repeat: no-repeat;
+  padding-top: 50px;
+
+  &--ecologic {
+    background-image: url("../img/index/icon-flower.svg");
+  }
+
+  &--price {
+    background-image: url("../img/index/icon-money.svg");
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--favorite {
+    background-image: url("../img/index/icon-heart.svg");
+
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--handmade {
+    background-image: url("../img/index/icon-knidle.svg");
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--support {
+    background-image: url("../img/index/icon-rocket.svg");
+
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--package {
+    background-image: url("../img/index/icon-present.svg");
+
+    @media (min-width: @tablet-width) {
+      order: 6;
+    }
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  font-weight: 700;
+  line-height: 20px;
+  color: @black-color;
+}

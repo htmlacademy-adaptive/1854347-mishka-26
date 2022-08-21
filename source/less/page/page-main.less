@@ -1,26 +1,15 @@
-// index
-@import "../components/features.less";
-@import "../components/card-top.less";
-@import "../components/about-us.less";
-@import "../components/user-quote";
-@import "../components/contacts.less";
+.page-main {
+  flex-grow: 1;
 
-// form
-@import "../components/order.less";
-@import "../components/text.less";
-@import "../components/email.less";
-@import "../components/tell.less";
-@import "../components/user-name.less";
-@import "../components/user-form.less";
-@import "../components/checkbox.less";
-@import "../components/radio.less";
-@import "../components/order-form.less";
+  &--catalog {
+    margin: 0 0 58px;
+  }
 
-// catalog
-@import "../components/catalog.less";
-@import "../components/production.less";
-@import "../components/hero.less";
+  @media (min-width: @tablet-width) {
+    margin-top: -86px;
+  }
 
-.page-main__header {
-  margin-bottom: 30px;
+  @media (min-width: @desktop-width) {
+    margin-top: -60px;
+  }
 }
