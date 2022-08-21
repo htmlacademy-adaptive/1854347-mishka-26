@@ -1,5 +1,44 @@
 .user-list {
-  display: none;
-  outline: 5px solid rgba(250, 150, 50, 0.8);
-  outline-offset: -5px;
+  .list-reset();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-self: end;
+    align-items: center;
+  }
+}
+
+.user-list__link {
+  .link-reset();
+
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.user-list__icon {
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+    margin: 0 21px;
+  }
+}
+
+.user-list__name {
+  @media (min-width: @tablet-width) {
+    &--search {
+      display: none;
+    }
+  }
 }

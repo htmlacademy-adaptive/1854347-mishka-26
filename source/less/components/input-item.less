@@ -1,0 +1,51 @@
+.input-item__field {
+  background-color: transparent;
+
+  &--text {
+    width: 100%;
+    padding: 17px 9px 17px 0;
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid @black-color;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  ::placeholder {
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  &--textarea {
+    width: 100%;
+    padding: 17px;
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: @black-color;
+    resize: none;
+    border: 2px solid @brown-color;
+    box-sizing: border-box;
+  }
+}
+
+.input-item__label {
+  font-weight: 700;
+  line-height: 18px;
+  color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+}

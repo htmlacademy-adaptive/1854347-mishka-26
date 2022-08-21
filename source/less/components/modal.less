@@ -1,0 +1,31 @@
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__title {
+  margin: 0 0 14px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__text {
+  margin: 0 0 21px;
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}

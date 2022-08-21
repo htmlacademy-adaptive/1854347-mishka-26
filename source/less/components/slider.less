@@ -1,0 +1,60 @@
+.slider {
+  position: relative;
+}
+
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__buttons {
+  margin: 0 0 39px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    column-gap: 37px;
+    bottom: 2px;
+    right: 19px;
+  }
+}
+
+.slider__button {
+  width: 130px;
+  height: 52px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left 38px center;
+  box-sizing: border-box;
+  border: 1px solid @light-brown-color;
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    background-position: center;
+    border: none;
+  }
+}
+
+.slider__button-previous {
+  border-right: none;
+  background-image: url("../img/index/arrow-left.svg");
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__button-next {
+  background-image: url("../img/index/arrow-right.svg");
+}

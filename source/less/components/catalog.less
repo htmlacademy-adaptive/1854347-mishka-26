@@ -1,0 +1,29 @@
+.catalog__title {
+  margin: 20px auto;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 32px 0 0;
+  .list-reset();
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+}
+
+.catalog__item {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
