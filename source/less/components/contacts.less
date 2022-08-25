@@ -2,6 +2,10 @@
   padding: 38px 0 39px;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding: 69px 0 56px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 71px 0 105px;
   }
@@ -21,28 +25,56 @@
 
 .contacts__title {
   margin: 0 0 28px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -23px;
+      right: 3px;
+      background-image: url("../img/index/flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     grid-column: span 2;
-    margin-left: 111px;
+    margin: 79px 0 0 111px;
+    align-self: start;
+
+    &::after {
+      top: -17px;
+      left: -111px;
+      right: auto;
+    }
   }
 }
 
 .contacts__list {
-  margin: 0 0 62px;
+  display: grid;
+  grid-template-columns: 76px auto;
+  row-gap: 30px;
+  margin: 0 0 65px;
   font-size: 14px;
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    grid-template-columns: 79px 255px 79px 255px;
     margin: 0 0 49px;
+    font-size: 17px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: column;
     grid-row: 2;
     grid-column: 2;
-    margin: 0;
+    grid-template-columns: 76px auto;
+    margin-bottom: 32px;
+    row-gap: 12px;
   }
 }
 
@@ -52,11 +84,42 @@
 
 .contacts__email {
   .link-reset();
+  position: relative;
+
+  &:hover {
+    color: @dark-green-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: @bright-green-color;
+
+    @media (min-width: @desktop-width) {
+      bottom: -9px;
+    }
+  }
+}
+
+.contacts__email:hover::after {
+  background-color: @dark-green-color;
+}
+
+.contacts__email:active::after {
+  background-color: rgba(70, 193, 174, 0.1);
 }
 
 .contacts__location {
-  margin: 0 0 42px;
+  margin: 0 0 38px;
   background-color: @lilak-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -83,6 +146,11 @@
 
 .contacts__button {
   justify-self: center;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-row: 3;
@@ -105,6 +173,7 @@
   @media (min-width: @tablet-width) {
     width: 100vw;
     height: 457px;
+    bottom: 164px;
   }
 
   @media (min-width: @desktop-width) {

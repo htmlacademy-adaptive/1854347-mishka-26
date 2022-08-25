@@ -1,6 +1,41 @@
 .intro__hero {
   background: @lilak-dark-color url("../../img/index/hero-desktop.png") no-repeat center/contain;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -13px;
+      left: 0;
+      background-image: url("../img/zigzag-line-white-tablet.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      height: 34px;
+      bottom: -18px;
+      left: 0;
+      background-image: url("../img/zigzag-line-white-desktop.svg");
+    }
+  }
+}
+
+.intro__title {
   padding: 53px 0 100px;
+
+  @media (min-width: @tablet-width) {
+    padding: 135px 0 351px;
+    border-top: 1px solid @light-brown-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 137px 0 335px;
+  }
 }
 
 .intro__title {

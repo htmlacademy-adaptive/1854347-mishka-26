@@ -24,14 +24,16 @@
 
 .page-header__text {
   display: none;
+  width: 500px;
   margin: 0;
+  margin-left: auto;
   font-size: 15px;
   text-align: right;
-
 
   @media (min-width: @tablet-width) {
     position: relative;
     display: block;
-    transform: translateY(-48px);
+    z-index: 1;
+    transform: translateY(-41px);
   }
 }
