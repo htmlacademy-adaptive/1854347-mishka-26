@@ -1,8 +1,34 @@
-.modal-control {
+.modal-control__label {
+  display: block;
+  padding: 18px 22px;
+  min-width: 82px;
+  min-height: 52px;
   border: 2px solid rgba(68, 68, 68, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @bright-green-color;
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 112px;
+  }
 }
 
-.modal-control__label {
-  .font-text(700;17px;16px);
-  text-transform: uppercase;
+.modal-control__field:checked + .modal-control__label {
+  border-color: @green-color;
+}
+
+.modal-control__field:disabled + .modal-control__label {
+  opacity: 0.2;
 }

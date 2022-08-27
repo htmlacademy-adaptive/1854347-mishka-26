@@ -1,6 +1,17 @@
 .modal-form__list {
   .list-reset();
   display: flex;
-  gap: 7px;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 0 31px;
+  padding: 0;
+}
+
+.modal-form__button {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+  }
 }

@@ -3,19 +3,23 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 0 80px;
+    padding: 56px 0 83px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 68px 0 90px;
+    padding: 69px 0 87px;
   }
 }
 
 .advantages__title {
   margin: 0 0 28px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 42px;
     margin-left: 175px;
   }
 }
@@ -24,24 +28,26 @@
   .list-reset();
   margin: 0;
   padding: 0;
+  display: grid;
+  row-gap: 28px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 70px;
-    row-gap: 58px;
+    column-gap: 2px;
+    row-gap: 55px;
   }
 
   @media (min-width: @desktop-width) {
     width: 670px;
     margin-left: 175px;
-    column-gap: 85px;
+    column-gap: 30px;
+    row-gap: 57px;
   }
 }
 
 .advantages__item {
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 55px;
 
   &--ecologic {
     background-image: url("../img/index/icon-flower.svg");
@@ -64,7 +70,7 @@
   }
 
   &--handmade {
-    background-image: url("../img/index/icon-knidle.svg");
+    background-image: url("../img/index/icon-present.svg");
 
     @media (min-width: @tablet-width) {
       order: 2;
@@ -86,6 +92,10 @@
       order: 6;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .advantages__description {
@@ -93,4 +103,9 @@
   font-weight: 700;
   line-height: 20px;
   color: @black-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

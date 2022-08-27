@@ -1,11 +1,17 @@
 .features-list {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, 38px);
+  grid-template-columns: 98px auto;
+  grid-template-rows: repeat(3, 40px);
   font-size: 15px;
   line-height: 20px;
 }
 
 .features-list__value {
   margin: 0;
+}
+
+.features-list__name,
+.features-list__value {
+  padding: 9px 0 10px;
+  border-bottom: 1px solid @light-brown-color;
 }
