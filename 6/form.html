@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/1854347-mishka-26/6/">
+</head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__container">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a class="main-nav__logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/header/header-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/header/header-logo-tablet.svg">
+              <img class="logo__image" src="img/header/header-logo-phone.svg" alt="Логотип магазина Мишка." width="86"
+                height="35">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-navigation__link" href="catalog.html">
+                <div class="site-navigation__link-container">
+                  Каталог товаров
+                </div>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                <div class="site-list__link-container">
+                  Вязание на&nbsp;заказ
+                </div>
+              </a>
+
+            </li>
+            <li class="site-list__item site-list__item--further">
+              <a class="site-list__link" href="#">
+                <div class="site-list__link-container">Новые поступления</div>
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--further">
+              <a class="site-list__link" href="#">
+                <div class="site-list__link-container">Распродажа</div>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="">
+                <div class="user-list__link-container">
+                  <div class="user-navigation__link-container">
+                    <svg
+                      class="user-navigation__icon user-navigation__icon--search"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity=".2"
+                        d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z"
+                      />
+                    </svg>
+                    <span
+                      class="user-navigation__name user-navigation__name--search"
+                      >Поиск по&nbsp;сайту</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="">
+                <div class="user-list__link-container">
+                  <svg
+                    class="user-list__icon"
+                    width="21"
+                    height="18"
+                    viewBox="0 0 21 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity=".2"
+                      d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z"
+                    />
+                  </svg>
+                  <span class="user-list__name">Корзина: пока пуста</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="page-header__text">Бесплатная доставка по России</p>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="make-order">
+        <div class="make-order__heading section-header">
+          <div class="container">
+            <h1 class="make-order__title heading">Вязание на&nbsp;заказ</h1>
+          </div>
+        </div>
+        <form
+          class="make-order__form order-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <div class="container">
+            <p class="make-order__description">
+              Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания!
+              Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся
+              с&nbsp;вами, чтобы уточнить детали.
+            </p>
+            <h2 class="visually-hidden">Форма заказа.</h2>
+            <fieldset class="order-form__group">
+              <div class="order-form__caption">Тип</div>
+              <ul class="order-form__list">
+                <li class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--radio"
+                  >
+                    <input
+                      class="input-item__field visually-hidden"
+                      type="radio"
+                      name="product-type"
+                      value="interior-accessories"
+                      checked
+                    />
+                    <span
+                      class="input-item__mark input-item__mark--radio"
+                    ></span>
+                    <span class="input-item__label"
+                      >Аксессуар для интерьера</span
+                    >
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--radio"
+                  >
+                    <input
+                      class="input-item__field visually-hidden"
+                      type="radio"
+                      name="product-type"
+                      value="toys"
+                    />
+                    <span
+                      class="input-item__mark input-item__mark--radio"
+                    ></span>
+                    <span class="input-item__label">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="highlight">
+            <div class="container">
+              <fieldset class="order-form__group">
+                <div class="order-form__caption order-form__caption--checkbox">
+                  Цвет
+                </div>
+                <ul class="order-form__list order-form__list--color-pick">
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="white"
+                        checked
+                      />
+                      <span class="input-item__mark input-item__mark"></span>
+                      <span class="input-item__label">Белый</span>
+                    </label>
+                  </li>
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="grey"
+                        checked
+                      />
+                      <span class="input-item__mark input-item__mark"></span>
+                      <span class="input-item__label">Серый</span>
+                    </label>
+                  </li>
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="tiffany-blue"
+                      />
+                      <span
+                        class="input-item__mark input-item__mark--checkbox"
+                      ></span>
+                      <span class="input-item__label">Тиффани</span>
+                    </label>
+                  </li>
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="black"
+                      />
+                      <span
+                        class="input-item__mark input-item__mark--checkbox"
+                      ></span>
+                      <span class="input-item__label">Черный</span>
+                    </label>
+                  </li>
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="pink"
+                      />
+                      <span
+                        class="input-item__mark input-item__mark--checkbox"
+                      ></span>
+                      <span class="input-item__label">Розовый</span>
+                    </label>
+                  </li>
+                  <li class="order-form__item">
+                    <label
+                      class="order-form__control input-item input-item--checkbox"
+                    >
+                      <input
+                        class="input-item__field visually-hidden"
+                        type="checkbox"
+                        name="orange"
+                      />
+                      <span
+                        class="input-item__mark input-item__mark--checkbox"
+                      ></span>
+                      <span class="input-item__label">Оранжевый</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <fieldset class="order-form__group order-form__group--name">
+              <div class="order-form__caption order-form__caption--name">
+                ФИО
+              </div>
+              <ul class="order-form__list order-form__list--name">
+                <li class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--text"
+                  >
+                    <span class="input-item__label">Имя:</span>
+                    <input
+                      class="input-item__field input-item__field--text"
+                      type="text"
+                      name="user-name"
+                      required
+                      placeholder="Введите ваше имя*"
+                    />
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--text"
+                  >
+                    <span class="input-item__label">Фамилия:</span>
+                    <input
+                      class="input-item__field input-item__field--text"
+                      type="text"
+                      name="user-surname"
+                      required
+                      placeholder="Укажите фамилию*"
+                    />
+                  </label>
+                </li>
+                <li class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--text"
+                  >
+                    <span class="input-item__label">Отчество:</span>
+                    <input
+                      class="input-item__field input-item__field--text"
+                      type="text"
+                      name="user-patronymic"
+                      placeholder="Отчество, если желаете"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="highlight">
+            <div class="container">
+              <fieldset class="order-form__group">
+                <div class="order-form__caption order-form__caption--contacts">
+                  Tел
+                </div>
+                <div class="order-form__item order-form__item--user-phone">
+                  <label
+                    class="order-form__control input-item input-item--text"
+                  >
+                    <input
+                      class="input-item__field input-item__field--text"
+                      type="tel"
+                      name="user-phone"
+                      required
+                      placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                    />
+                    <span class="visually-hidden">номер телефона.</span>
+                    <svg
+                      class="input-item__icon input-item__icon--phone"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="M17.44 24h-1.1a17.63 17.63 0 0 1-11.2-5.73A18.8 18.8 0 0 1 0 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 0 0 7.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06ZM12.6 1.48A10.8 10.8 0 0 1 23.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48Z"
+                        />
+                        <path
+                          d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 0 0-3.03-2.96ZM12.6 6.12a6.11 6.11 0 0 1 6.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1Z"
+                        />
+                      </g>
+                    </svg>
+                  </label>
+                </div>
+                <div
+                  class="order-form__caption order-form__caption--contacts order-form__caption--mail"
+                >
+                  E-mail
+                </div>
+                <div class="order-form__item">
+                  <label
+                    class="order-form__control input-item input-item--text"
+                  >
+                    <input
+                      class="input-item__field input-item__field--text"
+                      type="email"
+                      name="user-email"
+                      required
+                      placeholder="Ваш Email*"
+                    />
+                    <span class="visually-hidden">E-mail адрес.</span>
+                    <svg
+                      class="input-item__icon input-item__icon--mail"
+                      width="32"
+                      height="21"
+                      viewBox="0 0 32 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="container">
+            <fieldset class="order-form__group order-form__group--textarea">
+              <div class="order-form__caption order-form__caption--textarea">
+                Доп
+              </div>
+              <div class="order-form__item">
+                <label
+                  class="order-form__control input-item input-item--textarea"
+                >
+                  <textarea
+                    class="input-item__field input-item__field--textarea"
+                    name="extra-information"
+                    cols="22"
+                    rows="6"
+                    placeholder="Опишите все ваши пожелания к&nbsp;заказу"
+                  ></textarea>
+                  <span class="visually-hidden">Дополнительные пожелания.</span>
+                </label>
+              </div>
+            </fieldset>
+            <div class="order-form__footer">
+              <p class="order-form__footnote">
+                *Поля обязательны для заполнения
+              </p>
+              <button
+                class="order-form__button button button--primary"
+                type="submit"
+              >
+                Отправить заказ
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container page-footer__wrapper">
+        <svg
+          class="page-footer__logo"
+          width="102"
+          height="35"
+          viewBox="0 0 102 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.22 21.5c-.1-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.5 0-.2.1-.5.1-.7.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1 0 .1.1.2.1.3-.7 3.2-1.6 6.3-2.6 9.4-.4 1.2-.9 2.3-1.3 3.5-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.2.2-1.5-3.2-1.4-3.9 0-.8 1.7-.7 3.4-.4 5.2.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.9-.4.4-.5.9-.1 1.4.2.2.4.4.6.5 1 .7 3.6.1 3.6-1.3 0-4.1-.3-8.2-.4-12.4v-1.2c.1.1.1.3.2.4.6 1.6 1.3 3.2 2.2 4.7.9 1.5 1.3 3.1 1.8 4.7-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3-.1.6-.3.8-.4.3-.2.9-.7.7-1.2 0-.1-.1-.2-.1-.3.5-1.3.7-2.6 1-3.9.3-1.4.8-2.8 1.3-4.1.1.6.1 1.2.2 1.9.2 2.6 0 5.1 0 7.6 0 .8.1 1.6.2 2.5.1.3.4 1.8.3 1.9-.8.5-.6 1.1.2 1.3.9.2 2.1-.1 2.8-.7 1.2-1.1.6-2.8.4-4.2-.5-2.4 0-5-.1-7.4ZM27.62 22.2c-.1-2-.8-3.9-.8-5.9 0-2.3.2-4.6-.2-6.9-.1-.7-4.1.1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2.1-.1 4.2.1 6.2.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2-.1-4.2-.2-6.2ZM43.92 18.9c-2.1-2.8-5.9-.8-8.6-1.5-1.4-.4-1.4-2.3-1.4-3.4 0-1.4-.1-2.7-.3-4.1-.1-1.1 0-2.1.7-2.9.1-.1.9-.3.8-.3.4-.1.7-.1 1.1-.1 1.5-.1 4.6.2 4 2.5-.3 1 3.6.4 3.9-.6 1.2-4.6-7.3-3.7-9.7-3.1-2.2.6-4.6 1.8-4.8 4.4-.1 1.2.3 2.4.3 3.6.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.3 1.2 3.4.2 4.5-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8-.1-5.4-.1-.9-4.1-.1-3.9 1 .3 2.6-1.4 6.1 2.4 6.6 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3.1.9-6.5-1-9ZM61.32 18.7c-.1-3.8-.7-7.5-.7-11.3 0-2-4-1.3-4 .3 0 3.6.5 7.2.7 10.8v.2c-1.9 0-3.9.2-5.9.2.2-4.6-.6-9.2-.4-13.9 0-.6-3.9-.1-3.9 1-.2 4.5.6 8.9.5 13.4l-.3 6.4c0 1.1.2 2.2.3 3.3.1 1 .5 2.3.2 3.3-.2.8 3.6.3 3.9-.7.5-1.8-.2-4-.4-5.8-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0l.3 4.1c.1 1.2.2 2.3.2 3.5 0 1 .1 2.5-.2 3.5-.8 2.1 3.1 1.9 3.7.4.7-1.9.5-4.2.4-6.2-.2-2.5-.6-4.9-.6-7.3ZM78.22 23.1c-.9-2.8-2.4-5.2-3.6-7.8 1-1.9 2-3.9 2.9-5.9.8-1.8 1.4-3.8 3.1-5.1.6-.4.6-.9-.3-1-.9-.1-2.1.2-2.8.7-1.4 1.3-2.4 2.7-3.1 4.4-.9 2.1-1.9 4.1-2.9 6.1-.1.1-.1.3-.2.4-.5.3-.8.8-.6 1.3-.8 1.6-1.6 3.1-2.5 4.6-.3-5.5-1-11.1-1.2-16.6 0-1.3-4-.5-3.9 1 .2 6.9 1.2 13.7 1.3 20.6v.1c-.3.3-.2.5.1.6 0 1.8-.1 3.5-.2 5.3-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2.1.3-4.2.2-6.3 1.6-1.7 2.9-3.6 4.1-5.6.8 1.5 1.5 3 2 4.6.9 2.7 2.3 5.3 3.1 8 .5 1.8 4.5.7 3.9-1-1-2.8-2.4-5.3-3.3-8.1ZM101.72 18.5c-.2-.8-1.4-.8-2.3-.8v-1c-.1-2.7-.2-5.4-.4-8-.2-2.5-1.6-3.3-4-3.2-2.4.1-5.2.5-7.5 1.4-2.6 1-4.1 2.9-4.6 5.7-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.5 0 .6 3.9 0 3.9-1V23c0-.8-.1-1.6-.1-2.4 1.4-.6 3.7 0 5.1.1 1.1.1 2.2-.2 3.2-.3 0 2.3.1 4.6.2 6.9 0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .9-1.1.5-3.8.4-5.1-.1-1.9-.1-3.8-.1-5.7 1.1-.2 2.4-.9 2.2-1.8Zm-14.6-.1-.3-3.7c-.2-2.3.1-5.6 2.3-7 .6-.4 1.7-.3 2.4-.4 1-.2 2-.4 2.8.2 1.2.8.9 3.7.9 4.9 0 2 .2 4 .3 6-.6.1-1.1.1-1.7.1-2.3-.2-4.6-.6-6.7-.1ZM24.22 6.7c.5-.1 1-.2 1.5-.5l.2-.2c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5 0 1-.1 2 .1 3 0 .1-.1.2-.1.4-.1.2 0 .4.1.6v.4c.1.2.2.4.4.5.6.3 1.1.3 1.5.3Z"
+            fill="#000"
+          />
+        </svg>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a
+              class="social__link"
+              target="_blank"
+              href="https://vk.com/htmlacademy"
+            >
+              <svg
+                width="28"
+                height="23"
+                viewBox="0 0 28 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5.84c0-.86.52-1.32 1.55-1.38l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15.38-1.09 1.44-1.63 3.2-1.63l1.5-.03c.67 0 1.23.16 1.67.48.44.32.67.82.67 1.5v5.72c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95 47.51 47.51 0 0 1-3.28-7.05A1.92 1.92 0 0 1 1 5.84Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V5.5c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45l-.16.48c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link"
+              target="_blank"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              <svg
+                width="28"
+                height="23"
+                viewBox="0 0 28 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m17.85 11.3-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V9.58l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C20.22 2.48 14.25 2.5 14 2.5s-6.22-.02-9.94 1.4a2.4 2.4 0 0 0-1.45 1.64 25.32 25.32 0 0 0-.61 6.3c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C8.03 3.79 13.93 3.8 14 3.8c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link"
+              target="_blank"
+              href="https://t.me/htmlacademy"
+            >
+              <svg
+                width="28"
+                height="23"
+                viewBox="0 0 28 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.46 3.65c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96L14.63 11l-4.36 2.9a.66.66 0 0 1-.65.05L4.36 11.3a.66.66 0 0 1 .08-1.2l18.38-6.57a.66.66 0 0 1 .64.11ZM6.33 10.82l3.53 1.77 7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66-15.88 5.67Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright copyright">
+          Разработано
+          <a
+            class="copyright-link"
+            target="_blank"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            <svg
+              class="copyright-icon"
+              width="27"
+              height="35"
+              viewBox="0 0 27 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+              />
+            </svg>
+            <span class="visually-hidden">На старницу HTML Academy.</span>
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
