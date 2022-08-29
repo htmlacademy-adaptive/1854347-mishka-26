@@ -1,5 +1,6 @@
 .catalog-link {
   .link-reset();
+  position: relative;
   display: block;
   box-sizing: border-box;
   padding: 24px 30px 31px;
@@ -15,9 +16,6 @@
 
   &--interior-items {
     background-color: @green-color;
-    background-image: url("../img/index/interior-btn.svg");
-    background-repeat: no-repeat;
-    background-position: center right 36px;
 
     &:hover {
       background-color: @light-green-color;
@@ -25,14 +23,23 @@
 
     &:active {
       background-color: @light-green-color;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 62px;
+      top: 50%;
+      right: 36px;
+      transform: translateY(-50%);
+      background-image: url("../img/index/interior-btn.svg");
+      background-repeat: no-repeat;
     }
   }
 
   &--toys {
     background-color: @medium-green-color;
-    background-image: url("../img/index/toys-btn.svg");
-    background-repeat: no-repeat;
-    background-position: center right 27px;
 
     &:hover {
       background-color: @dark-green-color;
@@ -41,7 +48,24 @@
     &:active {
       background-color: @dark-green-color;
     }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      right: 27px;
+      transform: translateY(-50%);
+      background-image: url("../img/index/toys-btn.svg");
+      background-repeat: no-repeat;
+    }
   }
+}
+
+.catalog-link--interior-items:hover::after,
+.catalog-link--toys:hover::after {
+  opacity: 0.7;
 }
 
 .catalog-link__caption {

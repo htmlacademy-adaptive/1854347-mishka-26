@@ -167,6 +167,29 @@
             <div class="top-product__photo-wrapper">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/index/knitted-baskets-desktop.webp    1x,
+                    img/index/knitted-baskets-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/index/knitted-baskets-tablet.webp    1x,
+                    img/index/knitted-baskets-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/index/knitted-baskets.webp    1x,
+                    img/index/knitted-baskets@2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 1150px)"
                   srcset="
                     img/index/knitted-baskets-desktop.jpg    1x,
@@ -182,8 +205,8 @@
                 />
                 <img
                   class="top-product__photo"
-                  src="img/index/knitted-baskets-mobile.jpg"
-                  srcset="img/index/knitted-baskets-mobile@2x.jpg 2x"
+                  src="img/index/knitted-baskets.jpg"
+                  srcset="img/index/knitted-baskets@2x.jpg 2x"
                   alt="Вязаные корзинки разных размеров."
                 />
               </picture>
@@ -328,19 +351,19 @@
               </dd>
             </dl>
             <div class="contacts__location location">
-              <img
-                class="contacts__map"
-                src="img/index/map-mobile.png"
-                alt="Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101."
-                width="320"
-                height="454"
-              />
-            </div>
-            <a
-              class="contacts__button button button--primary"
-              href="feedback.html"
-              >Напишите нам</a
-            >
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/map-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-tablet.webp">
+              <source type="image/webp" srcset="img/index/map-mobile.webp">
+              <source media="(min-width: 1150px)" srcset="img/index/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/index/map-tablet.jpg">
+              <img class="contacts__image" src="img/index/map-mobile.jpg"
+                alt="Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+            </picture>
+          </div>
+          <a class="contacts__button button button--primary" href="feedback.html">Напишите нам</a>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556367!2d30.315220216209777!3d59.96826866666994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1661770460779!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
           </div>
         </div>
       </section>
