@@ -4,7 +4,7 @@
 
 .catalog__list {
   margin: 0;
-  padding: 32px 0 0;
+  padding: 29px 0 0;
   .list-reset();
 
   @media (min-width: @tablet-width) {
@@ -13,6 +13,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 110px;
+    padding-bottom: 58px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
@@ -24,5 +25,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }

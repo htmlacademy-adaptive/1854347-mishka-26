@@ -2,14 +2,18 @@
   flex-grow: 1;
 
   &--catalog {
-    padding: 0 0 63px;
+    padding: 0 0 57px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 64px;
+    }
 
     @media (min-width: @desktop-width) {
-      padding-bottom: 108px;
+      padding-bottom: 103px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: -42px;
+    margin-top: -86px;
   }
 }
