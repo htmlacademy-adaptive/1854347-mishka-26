@@ -9,7 +9,7 @@ import htmlmin from "gulp-htmlmin";
 import browser from "browser-sync";
 import squoosh from "gulp-libsquoosh";
 import terser from "gulp-terser";
-import svgmin from "gulp-svgmin";
+import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import { deleteAsync } from "del";
 
@@ -48,11 +48,10 @@ const imagesOptimizer = () => {
 
 const imagesConverter = () => {
   return gulp
-    .src(["source/img/**/*.{jpg,png}", "!source/backgrounds/*.jpg"])
+    .src("source/img/**/*.{jpg,png}")
     .pipe(
       squoosh({
         webp: { quality: 80 }, //На стандартном качестве местами видно мыльцо
-        avif: { quality: 80 },
       })
     )
     .pipe(gulp.dest("build/img"));
@@ -66,13 +65,13 @@ const imagesCopy = () => {
 
 const svgOptimizer = () =>
   gulp
-    .src(["source/img/**/*.svg", "!source/img/icons/*.svg"])
+    .src(["source/img/**/*.svg", "!source/img/icon/*.svg"])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
 
 const svgSprite = () => {
   return gulp
-    .src("source/img/icons/*.svg")
+    .src("source/img/icon/*.svg")
     .pipe(svgo())
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
