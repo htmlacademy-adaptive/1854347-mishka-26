@@ -64,10 +64,7 @@ const imagesCopy = () => {
 //SVG
 
 const svgOptimizer = () =>
-  gulp
-    .src(["source/img/**/*.svg", "!source/img/icon/*.svg"])
-    .pipe(svgo())
-    .pipe(gulp.dest("build/img"));
+  gulp.src(["source/img/**/*.svg"]).pipe(svgo()).pipe(gulp.dest("build/img"));
 
 const svgSprite = () => {
   return gulp
