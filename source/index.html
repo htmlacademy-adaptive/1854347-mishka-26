@@ -4,13 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/icon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/icon/apple-icon-180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
-
   <body class="page__body">
     <!-- шапка -->
     <header class="page-header">
@@ -170,7 +169,7 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="
-                    img/index/knitted-baskets-desktop.webp    1x,
+                    img/index/knitted-baskets-desktop.webp 1x,
                     img/index/knitted-baskets-desktop.webp 2x
                   "
                 />
@@ -342,27 +341,57 @@
             <dl class="contacts__list">
               <dt class="contacts__item">e-mail:</dt>
               <dd class="contacts__value">
-                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru"
+                  >info@mimimishkashop.ru</a
+                >
               </dd>
               <dt class="contacts__item">адрес:</dt>
-              <dd class="contacts__value">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</dd>
+              <dd class="contacts__value">
+                г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8,
+                офис 101
+              </dd>
             </dl>
             <div class="contacts__location location">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/map-desktop.webp">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-tablet.webp">
-                <source type="image/webp" srcset="img/index/map-mobile.webp">
-                <source media="(min-width: 1150px)" srcset="img/index/map-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="img/index/map-tablet.jpg">
-                <img class="contacts__image" src="img/index/map-mobile.jpg"
-                  alt="Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+                <source
+                  type="image/webp"
+                  media="(min-width: 1150px)"
+                  srcset="img/index/map-desktop.webp"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="img/index/map-tablet.webp"
+                />
+                <source type="image/webp" srcset="img/index/map-mobile.webp" />
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="img/index/map-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/index/map-tablet.jpg"
+                />
+                <img
+                  class="contacts__image"
+                  src="img/index/map-mobile.jpg"
+                  alt="Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101."
+                />
               </picture>
             </div>
-            <a class="contacts__button button button--primary" href="feedback.html">Напишите нам</a>
-            <iframe class="contacts__map"
+            <a
+              class="contacts__button button button--primary"
+              href="feedback.html"
+              >Напишите нам</a
+            >
+            <iframe
+              class="contacts__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1659853440904!5m2!1sru!2sru"
-              width="320" height="454" allowfullscreen
-              title="Офис компании по адресу Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101."></iframe>
+              width="320"
+              height="454"
+              allowfullscreen
+              title="Офис компании по адресу Место на карте:г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101."
+            ></iframe>
           </div>
         </div>
       </section>
