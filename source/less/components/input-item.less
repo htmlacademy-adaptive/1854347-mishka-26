@@ -141,6 +141,10 @@
   background-color: @green-color;
 }
 
+.input-item--radio:focus-within .input-item__mark,
+.input-item--checkbox:focus-within .input-item__mark {
+  border-color: @green-color;
+}
 
 .input-item__label {
   display: block;
@@ -152,8 +156,14 @@
   }
 }
 
+.input-item--radio:focus-within .input-item__label,
+.input-item--checkbox:focus-within .input-item__label {
+  color: @bright-green-color;
+}
+
 .input-item__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--phone {
     top: 50%;
@@ -184,4 +194,13 @@
       transform: translateY(-43%);
     }
   }
+}
+
+
+.input-item:hover .input-item__icon {
+  fill: @bright-green-color;
+}
+
+.input-item:active .input-item__icon {
+  fill: @bright-green-color;
 }
