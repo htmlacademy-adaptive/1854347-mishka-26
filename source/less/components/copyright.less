@@ -3,13 +3,23 @@
   line-height: 18px;
   font-weight: 700;
   text-align: center;
-  color: var(--main-color);
+  color: @black-color;
 }
 
 .copyright-link {
   margin-left: 23px;
 }
 
-.copyright-icon {
+.copyright__icon {
   vertical-align: middle;
+  fill: @green-color;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: @dark-green-color;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: @dark-green-color;
+  opacity: 0.3;
 }

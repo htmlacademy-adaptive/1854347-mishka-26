@@ -50,6 +50,19 @@
     }
   }
 
+
+  &--contacts {
+    padding-right: 40px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 45px;
+    }
+  }
+
   &--textarea {
     width: 100%;
     height: 142px;
@@ -81,6 +94,14 @@
       font-size: 19px;
     }
   }
+}
+
+.input-item:hover .input-item__field {
+  border-color: @bright-green-color;
+}
+
+.input-item:active .input-item__field {
+  border-color: @bright-green-color;
 }
 
 .input-item__mark {
@@ -116,7 +137,7 @@
 }
 
 .input-item__field[type="checkbox"]:checked + .input-item__mark {
-  background: transparent url("../img/form/checkbox-tick.svg") no-repeat center;
+  background: transparent url("../img/icon/icon-checkbox.svg") no-repeat center;
 }
 
 .input-item__field[type="radio"]:checked + .input-item__mark::after {
@@ -128,6 +149,10 @@
   background-color: @green-color;
 }
 
+.input-item--radio:focus-within .input-item__mark,
+.input-item--checkbox:focus-within .input-item__mark {
+  border-color: @green-color;
+}
 
 .input-item__label {
   display: block;
@@ -139,8 +164,14 @@
   }
 }
 
+.input-item--radio:focus-within .input-item__label,
+.input-item--checkbox:focus-within .input-item__label {
+  color: @bright-green-color;
+}
+
 .input-item__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--phone {
     top: 50%;
@@ -171,4 +202,13 @@
       transform: translateY(-43%);
     }
   }
+}
+
+
+.input-item:hover .input-item__icon {
+  fill: @bright-green-color;
+}
+
+.input-item:active .input-item__icon {
+  fill: @bright-green-color;
 }

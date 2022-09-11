@@ -30,12 +30,28 @@
 
   @media (min-width: @desktop-width) {
     padding: 16px 0;
+
+    &:nth-child(even) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -36px;
+        height: 100%;
+        width: 1px;
+        background-color: @light-brown-color;
+      }
+
+      &:last-child::before {
+        display: none;
+      }
+    }
   }
 
-  &:first-child {
-    @media (min-width: @desktop-width) {
-      border-right: 1px solid @light-brown-color;
-    }
+  &:nth-child(n+3) {
+    font-size: 15px;
   }
 
   &--further {

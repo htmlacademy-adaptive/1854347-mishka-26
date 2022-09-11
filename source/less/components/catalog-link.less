@@ -2,7 +2,6 @@
   .link-reset();
   position: relative;
   display: block;
-  box-sizing: border-box;
   padding: 24px 30px 31px;
   color: @white-color;
   font-weight: 700;
@@ -12,6 +11,11 @@
     padding: 26px 36px 32px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      margin-top: -5px;
+      padding: 26px 36px 37px;
+    }
   }
 
   &--interior-items {
@@ -66,6 +70,7 @@
 .catalog-link--interior-items:hover::after,
 .catalog-link--toys:hover::after {
   opacity: 0.7;
+  transform: translateY(-50% - 5px);
 }
 
 .catalog-link__caption {
