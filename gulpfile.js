@@ -13,6 +13,24 @@ import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import { deleteAsync } from "del";
 
+//SVG
+
+const svgOptimizer = () => {
+  return gulp
+    .src(["source/img/**/*.svg", "!source/img/icon*.svg"])
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img"));
+};
+
+export const svgSprite = () => {
+  return gulp
+    .src("./source/img/icon/*.svg")
+    .pipe(svgo())
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/icon/"));
+};
+
 // Styles
 export const styles = () => {
   return gulp
@@ -59,20 +77,6 @@ const imagesConverter = () => {
 
 const imagesCopy = () => {
   return gulp.src("source/img/**/*.{png,jpg}").pipe(gulp.dest("build/img"));
-};
-
-//SVG
-
-const svgOptimizer = () =>
-  gulp.src(["source/img/**/*.svg"]).pipe(svgo()).pipe(gulp.dest("build/img"));
-
-const svgSprite = () => {
-  return gulp
-    .src("source/img/icon/*.svg")
-    .pipe(svgo())
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
 };
 
 //Copy

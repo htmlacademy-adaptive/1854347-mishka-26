@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 27px 0 23px;
+  padding: 17px 0 55px;
   background-color: @white-brown-color;
 
   @media (min-width: @tablet-width) {
@@ -27,7 +27,17 @@
 }
 
 .page-footer__logo {
-  fill: #000;
+  fill: @black-color;
+}
+
+
+.page-footer__link:hover .page-footer__logo {
+  fill: @green-color;
+  cursor: pointer;
+}
+
+.page-footer__link:active .page-footer__logo {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 .page-footer__social {
