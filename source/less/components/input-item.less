@@ -3,6 +3,7 @@
   align-items: center;
   gap: 20px;
   line-height: 18px;
+  cursor: pointer;
 
   &--text {
     position: relative;
@@ -23,6 +24,7 @@
 
 .input-item__field {
   background-color: transparent;
+  cursor: pointer;
 
   &--text {
     width: 100%;
@@ -35,21 +37,12 @@
     border-bottom: 2px solid @black-color;
     box-sizing: border-box;
 
-    &:hover {
-      border-color: @bright-green-color;
-    }
-
-    &:active {
-      border-color: @bright-green-color;
-    }
-
     @media (min-width: @tablet-width) {
       font-size: 19px;
       height: 52px;
       padding-left: 14px;
     }
   }
-
 
   &--contacts {
     padding-right: 40px;
@@ -203,7 +196,6 @@
     }
   }
 }
-
 
 .input-item:hover .input-item__icon {
   fill: @bright-green-color;
